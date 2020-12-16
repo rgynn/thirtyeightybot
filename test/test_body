@@ -1,0 +1,1090 @@
+
+
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<body>
+    <main id="MainContent" class="caas caas__body">
+        <div class="no-bs-center maincontent-container container main-body ignore-gutter-xs">
+            <div class="breadcrumbs-wrapper product-box-card">
+                
+<nav class="breadcrumbs link-collection" data-viewmodel="PageDependentComponents/BreadCrumbs/BreadCrumbsViewModel" data-initobject="{&quot;model&quot;:{&quot;links&quot;:[{&quot;title&quot;:&quot;Hem&quot;,&quot;link&quot;:&quot;/&quot;},{&quot;title&quot;:&quot;Datorutrustning&quot;,&quot;link&quot;:&quot;/department/10000/datorutrustning&quot;},{&quot;title&quot;:&quot;Datorkomponenter&quot;,&quot;link&quot;:&quot;/category/28003/datorutrustning/datorkomponenter&quot;}],&quot;breadCrumbsForGoogleTagManager&quot;:&quot;Hem|Datorutrustning|Datorkomponenter|Grafikkort&quot;,&quot;here&quot;:&quot;Grafikkort&quot;,&quot;hereLink&quot;:&quot;/category/10412/datorutrustning/datorkomponenter/grafikkort&quot;,&quot;multipleChoiceText&quot;:&quot;Flerval&quot;,&quot;showCurrentLocationOnSmallScreens&quot;:false}}"
+     aria-label="H&#228;r &#228;r du">
+
+    <div class="breadcrumb-items" data-bind="foreach: crumbs">
+        <div class="breadcrumb-item-wrapper">
+            <span class="icon icon-sm fa-darkgrey-angle-right"></span>
+            <a class="breadcrumb-item-link" data-bind="text: title, attr: { href: link }"></a>
+        </div>
+    </div>
+    <div class="current-location"  data-bind="css: { 'is-current-location-visible': isCurrentLocationVisible }">
+        <span class="icon icon-sm fa-darkgrey-angle-right"></span>
+        <span data-bind="text: hereText">Grafikkort</span>
+    </div>
+</nav>
+</div>
+        <ul data-bind="if: false, visible: false">
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                    </div>
+                    <a href="?manufacturer=Gainward" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">Gainward</span>
+                            <span class="count">(3)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                    </div>
+                    <a href="?manufacturer=Gigabyte" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">Gigabyte</span>
+                            <span class="count">(2)</span>
+                        </span>
+                    </a>
+                </li>
+        </ul>
+    <div data-bind="foreach: cnetFacets, visible: cnetFacets().length">
+        <form class="responsive-form facet expandable-facet">
+    <strong class="facet-title noselect" data-bind="click: collapseOrExpand, event: {keypress: collapseOrExpandKeyEvent}" tabindex="0">
+        <span data-bind="text: field">Grafikprocessor  </span>
+        <div class="facet-caret-wrapper">
+            <span data-bind="visible: !collapsed()" class="icon-20 icon fa-darkgrey-caret-up"></span>
+            <span data-bind="visible: collapsed()" class="icon-20 icon fa-darkgrey-caret-down" style="display: none;"></span>
+        </div>
+    </strong>
+    <button class="facet-title-button noselect"
+            data-bind="
+            click: collapseOrExpand,
+            event: {keypress: collapseOrExpandKeyEvent},
+            attr:{filtered: anySelected, loading:isLoading, 'aria-expanded':!collapsed() },
+            css:{'selected': !collapsed()},
+            value:id,
+            unselectable:true">
+        <span class="icon facet-title-unselected icon-sm fa-darkgrey-caret-right"></span>
+        <span class="icon facet-title-selected icon-sm fa-darkgrey-caret-down"></span>
+        <span class="icon facet-title-loading icon-sm fa-darkgrey-circle-o-notch"></span>
+        <span class="facet-title-field" data-bind="text: field">Grafikprocessor  </span>
+        <span class="facet-title-selected-facets" data-bind="text: field"></span>
+    </button>
+    <div class="listing noselect facet-expandable facet-expanded" data-bind="value: id, css:{ 'facet-expanded selected': !collapsed() }">
+        <ul data-bind="foreach: visibleItems, visible: true" style="display: none">
+            <li data-bind="css:{selected: selected}, attr:{'data-id':id}">
+                <div class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" data-bind="attr:{'id': 'chkFacetsListing-' + $parent.id + '-' + id, 'name': 'chkFacetsListing-' + $parent.id + '-' + id}, checked: selected, click: selectedClicked" aria-hidden="false" tabindex="-1" />
+                        <label class="checkbox-label" data-bind="attr:{'for': 'chkFacetsListing-' + $parent.id + '-' + id}, html: '<span class=\'hidden-visible-SR\'>' + text() + '</span>'"></label>
+                    </div>
+                    <a href="#" class="link" data-bind="attr:{href: query}, click:toggleSelected">
+                        <span class="text">
+                            <span class="display-name" data-bind="attr:{title: text}, text: text"></span>
+                            <span class="count">(<span data-bind="text: count"></span>)</span>
+                        </span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        
+        <ul data-bind="if: false, visible: false">
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;AMD Radeon RX 5500 XT" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;AMD Radeon RX 5500 XT" disabled="disabled" tabindex="-1"  />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;AMD Radeon RX 5500 XT"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7AMD%20Radeon%20RX%205500%20XT" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">AMD Radeon RX 5500 XT  </span>
+                            <span class="count">(1)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;AMD Radeon RX 6800 XT" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;AMD Radeon RX 6800 XT" disabled="disabled" tabindex="-1"  />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;AMD Radeon RX 6800 XT"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7AMD%20Radeon%20RX%206800%20XT" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">AMD Radeon RX 6800 XT  </span>
+                            <span class="count">(1)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;AMD Radeon RX 6900" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;AMD Radeon RX 6900" disabled="disabled" tabindex="-1"  />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;AMD Radeon RX 6900"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7AMD%20Radeon%20RX%206900" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">AMD Radeon RX 6900  </span>
+                            <span class="count">(1)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;Matrox M9140" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;Matrox M9140" disabled="disabled" tabindex="-1"  />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;Matrox M9140"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7Matrox%20M9140" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">Matrox M9140  </span>
+                            <span class="count">(1)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce GTX 1050 Ti" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce GTX 1050 Ti" disabled="disabled" tabindex="-1"  />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce GTX 1050 Ti"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7NVIDIA%20GeForce%20GTX%201050%20Ti" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">NVIDIA GeForce GTX 1050 Ti  </span>
+                            <span class="count">(1)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce RTX 2070 Super" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce RTX 2070 Super" disabled="disabled" tabindex="-1"  />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce RTX 2070 Super"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7NVIDIA%20GeForce%20RTX%202070%20Super" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">NVIDIA GeForce RTX 2070 Super  </span>
+                            <span class="count">(2)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce RTX 3080" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce RTX 3080" disabled="disabled" tabindex="-1" checked />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce RTX 3080"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7NVIDIA%20GeForce%20RTX%203080" class="selected link disabled">
+                        <span class="text">
+                            <span class="display-name">NVIDIA GeForce RTX 3080  </span>
+                            <span class="count">(3)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce RTX 3090" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce RTX 3090" disabled="disabled" tabindex="-1" checked />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA GeForce RTX 3090"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7NVIDIA%20GeForce%20RTX%203090" class="selected link disabled">
+                        <span class="text">
+                            <span class="display-name">NVIDIA GeForce RTX 3090  </span>
+                            <span class="count">(2)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA Quadro P400" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA Quadro P400" disabled="disabled" tabindex="-1"  />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA Quadro P400"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7NVIDIA%20Quadro%20P400" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">NVIDIA Quadro P400  </span>
+                            <span class="count">(1)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" aria-hidden="false" id="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA Quadro P620" name="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA Quadro P620" disabled="disabled" tabindex="-1"  />
+                        <label class="checkbox-label" for="chkFacetsListingHiddenGrafikprocessor_A00247  &#167;NVIDIA Quadro P620"></label>
+                    </div>
+                    <a href="?cnet=Grafikprocessor_A00247%20%20%C2%A7NVIDIA%20Quadro%20P620" class=" link disabled">
+                        <span class="text">
+                            <span class="display-name">NVIDIA Quadro P620  </span>
+                            <span class="count">(1)</span>
+                        </span>
+                    </a>
+                </li>
+        </ul>
+
+        <ul class="see-more" data-bind="visible: showMore()" style="display:none">
+            <li>
+                <a data-bind="click: toggleShow, visible: !showAll()" href="#">Visa alla...</a>
+                <a data-bind="click: toggleShow, visible: showAll()" href="#" style="display: none">Visa top 10...</a>
+            </li>
+        </ul>
+    </div>
+</form>
+
+    </div>
+
+    <div data-bind="with: sellers, visible: showSellers" style="display: none">
+        <form class="responsive-form facet expandable-facet">
+    <strong class="facet-title noselect" data-bind="click: collapseOrExpand, event: {keypress: collapseOrExpandKeyEvent}" tabindex="0">
+        <span data-bind="text: field">Selgere</span>
+        <div class="facet-caret-wrapper">
+            <span data-bind="visible: !collapsed()" class="icon-20 icon fa-darkgrey-caret-up"></span>
+            <span data-bind="visible: collapsed()" class="icon-20 icon fa-darkgrey-caret-down" style="display: none;"></span>
+        </div>
+    </strong>
+    <button class="facet-title-button noselect"
+            data-bind="
+            click: collapseOrExpand,
+            event: {keypress: collapseOrExpandKeyEvent},
+            attr:{filtered: anySelected, loading:isLoading, 'aria-expanded':!collapsed() },
+            css:{'selected': !collapsed()},
+            value:id,
+            unselectable:true">
+        <span class="icon facet-title-unselected icon-sm fa-darkgrey-caret-right"></span>
+        <span class="icon facet-title-selected icon-sm fa-darkgrey-caret-down"></span>
+        <span class="icon facet-title-loading icon-sm fa-darkgrey-circle-o-notch"></span>
+        <span class="facet-title-field" data-bind="text: field">Selgere</span>
+        <span class="facet-title-selected-facets" data-bind="text: field"></span>
+    </button>
+    <div class="listing noselect facet-expandable facet-expanded" data-bind="value: id, css:{ 'facet-expanded selected': !collapsed() }">
+        <ul data-bind="foreach: visibleItems, visible: true" style="display: none">
+            <li data-bind="css:{selected: selected}, attr:{'data-id':id}">
+                <div class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                        <input type="checkbox" class="checkbox-white" data-bind="attr:{'id': 'chkFacetsListing-' + $parent.id + '-' + id, 'name': 'chkFacetsListing-' + $parent.id + '-' + id}, checked: selected, click: selectedClicked" aria-hidden="false" tabindex="-1" />
+                        <label class="checkbox-label" data-bind="attr:{'for': 'chkFacetsListing-' + $parent.id + '-' + id}, html: '<span class=\'hidden-visible-SR\'>' + text() + '</span>'"></label>
+                    </div>
+                    <a href="#" class="link" data-bind="attr:{href: query}, click:toggleSelected">
+                        <span class="text">
+                            <span class="display-name" data-bind="attr:{title: text}, text: text"></span>
+                            <span class="count">(<span data-bind="text: count"></span>)</span>
+                        </span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        
+        <ul data-bind="if: false, visible: false">
+                <li class="combined-checkbox-and-link">
+                    <div class="checkbox-set">
+                    </div>
+                </li>
+        </ul>
+
+        <ul class="see-more" data-bind="visible: showMore()" style="display:none">
+            <li>
+                <a data-bind="click: toggleShow, visible: !showAll()" href="#">Visa alla...</a>
+                <a data-bind="click: toggleShow, visible: showAll()" href="#" style="display: none">Visa top 10...</a>
+            </li>
+        </ul>
+    </div>
+</form>
+
+    </div>
+
+    <div class="hidden-md hidden-lg facet__in-stock">
+        <form class="responsive-form search-available" data-viewmodel="Components/SearchViewControls/SearchAvailableViewModel" data-initobject="true">
+    <div class="checkbox-set">
+        <div class="input">
+            <input type="checkbox" class="checkbox-white" id="avaialbleOnly" data-bind="checked: showInStock"/>
+            <label for="avaialbleOnly">Visa produkter i lager</label>
+        </div>
+    </div>
+</form>
+<div class="search-available__separator hidden-xs hidden-sm"></div>
+    </div>
+
+        <div class="price-slider-facet">
+            <div class="facet" data-bind="visible: priceFacet.show" style="">
+                <div class="slider noselect">
+                    <div class="values">
+                        <label class="sr-only" for="price-slider-min">fra</label><input id="price-slider-min" class="value" value="9799" data-bind="value: priceFacet.minValueWithNotifyPriceFacetChange" type="text"/>
+                        <label class="sr-only" for="price-slider-max">til</label><input id="price-slider-max" class="value" value="19090" data-bind="value: priceFacet.maxValueWithNotifyPriceFacetChange" type="text"/>
+                    </div>
+                    <div data-bind="
+                         slider: {min: priceFacet.min, max: priceFacet.max, minValueWithoutNotify: priceFacet.minValueWithoutNotify, maxValueWithoutNotify: priceFacet.maxValueWithoutNotify, onChange: priceFacet.onChange},
+                         sliderRangeUpdated:{min: priceFacet.min, max: priceFacet.max},
+                         sliderMinMaxValueUpdated:{minValue: priceFacet.minValue, maxValue: priceFacet.maxValue},
+                         sliderKeyHandler:{lowerValue: priceFacet.minValueWithNotifyPriceFacetChange, upperValue: priceFacet.maxValueWithNotifyPriceFacetChange, max: priceFacet.max}" aria-hidden="true">
+                    </div>
+                    <p class="slider-helper-text">Justera reglaget eller skriv in fr&#229;n/till pris</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="row show-more-container hidden-md hidden-lg ">
+            <button class="btn-large primary search-button" data-bind="click: $parent.close">
+                <span data-bind="text: 'Visa {hits} tr&#228;ffar'.replace('{hits}', hits())">Visa 5 tr&#228;ffar</span>
+            </button>
+    </div>
+
+</div>
+</div>
+    </div>
+        <div class="overlay-sm fixed" data-bind="visible: isVerticalMenuOpen, click: close, swipeleft: close" style="display:none"></div>
+
+    
+
+<div class="history-wrapper" data-viewmodel="PageDependentComponents/History/HistoryViewModel"
+     data-initobject="{&quot;placementId&quot;:&quot;history&quot;,&quot;layoutDirection&quot;:&quot;vertical&quot;}">
+    <div data-bind="css:{'slide-in': isHistoryMenuOpen, 'show': showHistoryMenu, 'scroll': isHistoryMenuOpen}" class="hidden-xs hidden-sm">
+        <div data-bind="visible:numberOfSlides, css: { 'history-horizontal': isLayoutDirectionHorizontal(), 'history-vertical': !isLayoutDirectionHorizontal(), 'compact-history':  layoutName() == 'compact-history', 'compact-history-with-text2': layoutName() == 'compact-history-with-text2' }"
+             style="display: none">
+            <div class="recommendations-title">
+                <span class="recommendations-title-content" data-bind="text:message"></span>
+            </div>
+            <div class="swiper-previous-body-next-container">
+                <a class="previous" href="#" data-previous-button style="visibility: hidden" data-bind="style:{ visibility: isFirstSlide() ? 'hidden':'visible'}">
+                    <i class="icon icon-20 fa-darkgrey-angle-left-wide" aria-label="Bl&#228;ddra till f&#246;reg&#229;ende" title="Bl&#228;ddra till f&#246;reg&#229;ende"></i>
+                </a>
+                <div class="swiper-container body"
+                     data-bind="recommendationCarusel: {
+                        slidesPerView:slidesPerViewThrottled, numberOfSlides: numberOfSlides, allowSwipe: hasMultipleSlides, setSlideState: setSlideState, ready: isActive()}">
+
+                    <div class="swiper-wrapper" data-bind="foreach:items, afterForeach: afterLastItemIsRendered, visible:isRendered" style="display: none">
+                        <div class="swiper-slide">
+                            
+
+<div class="recommendations-content">
+    <div class="recommendations-item">
+        <a class="image-container" href="#" data-bind="sendBeaconOnClick:linkURL, attr:{ href:'/product/' + id, title: title }">
+            <div style="display: none;" data-bind="visible:price<priceBefore && $parent.showDiscountBubble && !$data.hideDiscountPromotion">
+                <div data-bind="if: $data.showDiscountPromotionAsCurrency">
+                    <div class="discount-bubble--currency image-discount-bubble discount-bubble--rich">
+                        <span class="discount-label--currency">
+                            <span class="currency-discount--desktop">SPARA <span data-bind="text: $parent.formattedDiscount(price, priceBefore, 'SE')"></span></span>
+                            <span class="currency-discount--mobile">-
+                                <span data-bind="text: $parent.formattedDiscount(price, priceBefore, 'SE').replace(',-', ' KR')"></span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div data-bind="if: !$data.showDiscountPromotionAsCurrency">
+                    <div class="discount-bubble image-discount-bubble">
+                        <span class="discount-label">
+                            -<span data-bind="text:$parent.calculateDiscount(price, priceBefore)"></span>%
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <img loading="lazy" height="150px" width="200px" class="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkkAQAAB8AG7jymN8AAAAASUVORK5CYII="
+                     data-bind="attr:{src:imageURL, alt:imageAltText, title:imageAltText}" alt="" title="" />
+            </div>
+        </a>
+        <div class="content-block">
+            <a class="text-container" href="#" data-bind="sendBeaconOnClick:linkURL, attr:{ href:'/product/' + id, title: title }">
+                <div class="text-content">
+                    <h3 class="recommendations-webtxt1" data-bind="html:title"></h3>
+                    <h4 class="recommendations-webtxt2" data-bind="html:description"></h4>
+                </div>
+                <div class="recommendations-reviews">
+                        <div class="recommendations-rating-stars" data-bind="css: { 'do-not-show': !rating }">
+                            <div class="rating-stars" data-bind="css:$parent.ratingImageCssClass(rating), title:rating"></div>
+                        </div>
+                </div>
+            </a>
+
+            <div data-bind="with: $parent.getProductVariantToShow($data.variantsGroup)">
+                
+
+<div class="product-variants product-variants__recommendations">
+    <div data-bind="if: $data.products && $data.products.length > 1"
+         data-viewmodel="Components/ProductVariants/ProductVariantsViewModel"
+         data-params="products: $data.products,
+                      type: $data.type">
+        <div data-bind="if: type==='COLOR'">
+            <div class="product-variants__listing">
+                <!-- ko foreach: visibleProducts -->
+                <div class="product-variant__color product-variant__color--square">
+                    <a data-bind="visible: $data, attr:{ href:'/product/' + $data.matnr, title: $data.displayValue, 'aria-label': $data.displayValue }, style: { 'border-color': $parent.lightenDarkenColor($data.value, -20) }, click: $parent.trackInteractionClick($data.matnr)"
+                       class="product-variant__color--spot product-variant__color--recommendations" style="display: none;">
+                        <div data-bind="style: { background: $data.value }"></div>
+                    </a>
+                </div>
+                <!-- /ko -->
+                <div data-bind="visible: showMore" style="display: none;">
+                    <div class="product-variant__color product-variant__color--square">
+                        <a data-bind="attr: { href: '/products/' + products[0].matnr }" class="product-variant__color--spot product-variants__listing--more">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-bind="if: $data.products && $data.products.length > 1"
+         data-viewmodel="Components/ProductVariants/ProductVariantsViewModel"
+         data-params="products: $data.products,
+                                  type: $data.type">
+        <div data-bind="if: type==='IMAGE'">
+            <div class="product-variants__listing">
+                <!-- ko foreach: visibleProducts -->
+                <a data-bind="visible: $data, attr:{ href: '/product/' + $data.matnr }, click: $parent.trackInteractionClick($data.matnr)"
+                   class="product-variant__image--square" style="display: none;">
+                    <img data-bind="attr: {src: '/img/p/200/' + $data.matnr + '.jpg', alt: $data.displayValue, title: $data.displayValue }" />
+                </a>
+                <!-- /ko -->
+                <div data-bind="visible: showMore" style="display: none;">
+                    <div class="product-variant__button">
+                        <a data-bind="attr: { href: '/products/' + products[0].matnr }" class="product-variants__listing--more">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-bind="if: $data.products && $data.products.length > 1"
+         data-viewmodel="Components/ProductVariants/ProductVariantsViewModel"
+         data-params="products: $data.products,
+                                  type: $data.type">
+        <div data-bind="if: type !== 'COLOR' && type !== 'IMAGE'">
+            <div class="product-variants__listing">
+                <!-- ko foreach: visibleProducts -->
+                <a data-bind="visible: $data, attr:{ href:'/product/' + $data.matnr }, click: $parent.trackInteractionClick($data.matnr)"
+                   class="product-variant__button product-variant__pointer" style="display: none;">
+                    <span data-bind="text: $data.displayValue"></span>
+                </a>
+                <!-- /ko -->
+                <div data-bind="visible: showMore" style="display: none;">
+                    <div class="product-variant__button">
+                        <a data-bind="attr: { href: '/products/' + products[0].matnr }" class="product-variants__listing--more">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <div class="box-bottom">
+                <div class="price-wrapper" data-bind="if:buyType !== 'priceOnRequest'">
+                    <div class="recommendations-now-price">
+                        <span data-bind="text:priceFormatted"></span>
+                    </div>
+                    <div style="display: none;" class="recommendations-net-price" data-bind="visible:showNetPrices">
+                        Exkl moms
+                    </div>
+                </div>
+                <div class="rr-buy-area" data-bind="if:$parent.showBuyButton()">
+                    <a tabindex="-1" role="button" style="display: none" data-bind="css: {'added-to-cart': addToCart.buttonClicked}, visible:buyType=='buy', sendBeaconOnClick:linkURL, attr:{ href:'/cart/AddProductToCartAsync?productId=' + id + '&amp;quantity=1'} ,click: addToCart.addToCartNotification" class="buy-button btn-small  primary" href="#buy" aria-atomic="true" aria-live="assertive" rel="nofollow">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                        <span class="text" data-bind="visible: !addToCart.buttonClicked()">K&#246;p</span>
+                        <span class="text" data-bind="visible: addToCart.buttonClicked" style="display: none;">Tillagd</span>
+                    </a>
+                    <a tabindex="-1" role="button" style="display: none" data-bind="css: {'added-to-cart': addToCart.buttonClicked}, visible:buyType=='preorder', sendBeaconOnClick:linkURL, attr:{ href:'/cart/AddProductToCartAsync?productId=' + id + '&amp;quantity=1'} ,click: addToCart.addToCartNotification" class="buy-button btn-small secondary pre-order-button" href="#buy" aria-atomic="true" aria-live="assertive" rel="nofollow">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                        <span class="text" data-bind="visible: !addToCart.buttonClicked()">Boka</span>
+                        <span class="text" data-bind="visible: addToCart.buttonClicked" style="display: none;">Tillagd</span>
+                    </a>
+                    <a tabindex="-1" role="button" style="display: none" data-bind="css: {'added-to-cart': addToCart.buttonClicked}, visible:buyType=='download', sendBeaconOnClick:linkURL, attr:{ href:'/cart/AddProductToCartAsync?productId=' + id + '&amp;quantity=1'} ,click: addToCart.addToCartNotification" class="buy-button btn-small primary btn-icon" href="#buy" aria-atomic="true" aria-live="assertive" rel="nofollow">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                        <span class="icon fa-white-download"></span>
+                        <span class="text" data-bind="visible: !addToCart.buttonClicked()">K&#246;p</span>
+                        <span class="text" data-bind="visible: addToCart.buttonClicked" style="display: none;">Tillagd</span>
+                    </a>
+                    <a tabindex="-1" role="button" style="display: none" data-bind="visible:buyType=='priceOnRequest', click: priceOnRequestModal" class="buy-button btn-small secondary">
+                        <span class="text">Inquire</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="energy-logo" data-bind="if: energyLogoModel">
+            <div class="product-energy-logo"
+                 data-viewmodel="Components/ProductEnergyLogo/ProductEnergyLogoViewModel"
+                 data-params="
+                        manufacturerName: energyLogoModel.manufacturerName,
+                        manufacturerPartNumber: energyLogoModel.manufacturerPartNumber,
+                        energyDetailsUrl: energyLogoModel.energyDetailsUrl,
+                        energyTechnicalUrl: energyLogoModel.energyTechnicalUrl,
+                        technicalUboText: 'Produktblad'"
+                 data-bind="visible: isVisible"
+                 style="display: none">
+                <a href="#" data-bind="click: openTechnicalUbo">
+                    Produktblad
+                </a>
+                <a href="#" data-bind="click: openUbo" class="energy-logo-img-wrapper">
+                    <span data-bind="css: 'energy-' + $parent.energyLogoModel.energyGrade + '-' + $parent.energyLogoModel.energyRate, attr: { title: imageTitle }" class="icon product-energy-logo-img"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="next" href="#" data-next-button style="visibility: hidden" data-bind="style:{ visibility: isLastSlide() ? 'hidden':'visible'}">
+                    <i class="icon icon-20 fa-darkgrey-angle-right-wide" aria-label="Bl&#228;ddra till n&#228;sta" title="Bl&#228;ddra till n&#228;sta"></i>
+                </a>
+            </div>
+        </div>
+        <div class="recommendations-empty-history-message" data-bind="visible: !numberOfSlides()">
+            <p>Ingen historik</p>
+        </div>
+    </div>
+        <div class="overlay-sm fixed" data-bind="visible: isHistoryMenuOpen, click: close, swipeleft: close" style="display:none"></div>
+
+</div>
+</nav>
+
+            <div class="responsive-content-wrapper">
+                <div data-viewmodel="ksc-alert/ViewModel" data-initobject="{&quot;alertArray&quot;:[]}" class="alert-wrapper clearfix product-box-card"
+          >
+    <div data-bind="foreach:alerts">
+    <div class="row ksc-alert no-gutter" tabindex="-1" data-bind="css: alertLevelClass, visible: isVisible, hasFocus: hasFocus" style="display: none">
+        <div class="alert-header">
+            <div class="icon-wrapper">
+                <div class="icon" data-bind="css: iconClass"></div>
+            </div>
+        </div>
+        <div class="alert-content">
+            <div data-bind="html:message"></div>
+            <a href="#" data-bind="click: closeAlert" class="close-button" aria-label="St&#228;ng">
+                <span class="ksc-alert-close-icon"></span>
+            </a>
+        </div>
+
+    </div>
+</div>
+</div>
+</section>
+    </div>
+    <div data-bind="if: showInkSelector">
+               
+    </div>
+    <div data-bind="bindHtml: inkSelectorLazyResults">
+    </div>
+    <h1 style="display: none" class="category-header" data-bind="text: headerContentTitle, visible: cmsContentIsEmpty() && numberOfCategoriesSelected() <= 1">
+        Grafikkort - Datorkomponenter
+    </h1>
+    <div data-bind="bindHtml: lazyResults">
+    </div>
+</div>
+
+<div data-viewmodel="ksc-alert/ViewModel" data-initobject="{&quot;alertArray&quot;:[],&quot;receiver&quot;:&quot;inkSelector&quot;}">
+    <div data-bind="foreach:alerts">
+    <div class="row ksc-alert no-gutter" tabindex="-1" data-bind="css: alertLevelClass, visible: isVisible, hasFocus: hasFocus" style="display: none">
+        <div class="alert-header">
+            <div class="icon-wrapper">
+                <div class="icon" data-bind="css: iconClass"></div>
+            </div>
+        </div>
+        <div class="alert-content">
+            <div data-bind="html:message"></div>
+            <a href="#" data-bind="click: closeAlert" class="close-button" aria-label="St&#228;ng">
+                <span class="ksc-alert-close-icon"></span>
+            </a>
+        </div>
+
+    </div>
+</div>
+</div>
+            
+
+
+<div class="recommendations-content">
+    <div class="recommendations-item">
+        <a class="image-container" href="#" data-bind="sendBeaconOnClick:linkURL, attr:{ href:'/product/' + id, title: title }">
+            <div style="display: none;" data-bind="visible:price<priceBefore && $parent.showDiscountBubble && !$data.hideDiscountPromotion">
+                <div data-bind="if: $data.showDiscountPromotionAsCurrency">
+                    <div class="discount-bubble--currency image-discount-bubble discount-bubble--rich">
+                        <span class="discount-label--currency">
+                            <span class="currency-discount--desktop">SPARA <span data-bind="text: $parent.formattedDiscount(price, priceBefore, 'SE')"></span></span>
+                            <span class="currency-discount--mobile">-
+                                <span data-bind="text: $parent.formattedDiscount(price, priceBefore, 'SE').replace(',-', ' KR')"></span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div data-bind="if: !$data.showDiscountPromotionAsCurrency">
+                    <div class="discount-bubble image-discount-bubble">
+                        <span class="discount-label">
+                            -<span data-bind="text:$parent.calculateDiscount(price, priceBefore)"></span>%
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="image-wrapper">
+            </div>
+        </a>
+        <div class="content-block">
+            <a class="text-container" href="#" data-bind="sendBeaconOnClick:linkURL, attr:{ href:'/product/' + id, title: title }">
+                <div class="text-content">
+                    <h3 class="recommendations-webtxt1" data-bind="html:title"></h3>
+                    <h4 class="recommendations-webtxt2" data-bind="html:description"></h4>
+                </div>
+                <div class="recommendations-reviews">
+                        <div class="recommendations-rating-stars" data-bind="css: { 'do-not-show': !rating }">
+                            <div class="rating-stars" data-bind="css:$parent.ratingImageCssClass(rating), title:rating"></div>
+                        </div>
+                </div>
+            </a>
+
+            <div data-bind="with: $parent.getProductVariantToShow($data.variantsGroup)">
+                
+
+<div class="product-variants product-variants__recommendations">
+</div>
+            </div>
+
+            <div class="box-bottom">
+                <div class="price-wrapper" data-bind="if:buyType !== 'priceOnRequest'">
+                    <div class="recommendations-now-price">
+                        <span data-bind="text:priceFormatted"></span>
+                    </div>
+                    <div style="display: none;" class="recommendations-net-price" data-bind="visible:showNetPrices">
+                        Exkl moms
+                    </div>
+                </div>
+        </div>
+        <div class="energy-logo" data-bind="if: energyLogoModel">
+            
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="next" href="#" data-next-button style="visibility: hidden" data-bind="style:{ visibility: isLastSlide() ? 'hidden':'visible'}">
+                    <i class="icon icon-20 fa-darkgrey-angle-right-wide" aria-label="Bl&#228;ddra till n&#228;sta" title="Bl&#228;ddra till n&#228;sta"></i>
+                </a>
+            </div>
+    </div>
+</div>
+    </div>
+        <div class="row">
+            <div class="search-view-mode">
+                    <div class="view-mode-container hidden-xs">
+                        <span class="view-mode-label hidden-sm">V&#228;lj visningsvy:</span>
+                        <div class="view-mode__display">
+                            <button class="view-mode-list btn-ghost selected" data-bind="click: showResultAsList, css: {'selected': viewMode() == 'list'}" aria-hidden="true">
+                                <i class="icon"></i>
+                            </button>
+                            <button class="view-mode-grid btn-ghost " data-bind="click: showResultAsBoxes, css: {'selected': viewMode() == 'box'}" aria-hidden="true">
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                <div class="hidden-sm hidden-xs search-view-controls__in-stock">
+                    <form class="responsive-form search-available" data-viewmodel="Components/SearchViewControls/SearchAvailableViewModel" data-initobject="true">
+    <div class="checkbox-set">
+        <div class="input">
+            <input type="checkbox" class="checkbox-white" id="avaialbleOnly" data-bind="checked: showInStock"/>
+            <label for="avaialbleOnly">Visa produkter i lager</label>
+        </div>
+    </div>
+</form>
+<div class="search-available__separator hidden-xs hidden-sm"></div>
+                </div>
+
+                <a href="#" role="button" class="btn-small primary button-filters hidden-md hidden-lg" data-bind="click: openMenu"
+                   data-viewmodel="Components/NavigationMenu/ToggleResponsiveNavigationViewModel"
+                   data-initobject="{&quot;menuType&quot;:&quot;VerticalMenu&quot;}">
+                    Visa filter
+                </a>
+                    <div class="select-container">
+                        <label for="select-sort" class="hidden-visible-SR">Sortera efter</label>
+                    </div>
+                                    <a href="#" role="button" data-bind="click: $parent.compareClick" class="tertiary-white button-comparison btn-small">J&#228;mf&#246;r</a>
+                                    <div data-bind="foreach: appliedFilters, visible: appliedFilters" class="applied-filter-wrapper" style="display: none;">
+                        <div class="filter-tag">
+                            <span class="filter-tag__field" data-bind="if: $data.field"><span data-bind="text: $data.field + ':'"></span></span>
+                            <span data-bind="text: name" class="filter-tag__name"></span>
+                            <button data-bind="click: $parent.removeFilter, event: {keypress: $parent.onEnter}" class="filter-tag__remove" aria-label="Remove filter"><span class="icon-md icomoon-cross2 icon"></span></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<form class="product-list flexbox-list responsive-form list" data-bind=css:displayMode>
+    
+
+
+    <div class="product-list-item" data-lazy-viewmodel="Components/ProductListItems/ProductListItemViewModel">
+        <a class="product-link image-container" title="Gigabyte GeForce RTX 3080 Vision OC" href="/product/1171562/datorutrustning/datorkomponenter/grafikkort/gigabyte-geforce-rtx-3080-vision-oc"   tabindex="-1">
+                        <div class="image-wrapper">
+                    <img class="product-image"
+                         alt="Gigabyte GeForce RTX 3080 Vision OC Grafikkort"
+                         title="Gigabyte GeForce RTX 3080 Vision OC Grafikkort"
+                         src="/img/p/200/1171562.jpg" />
+            </div>
+
+                                </a>
+        <div class="content-block">
+            <div class="text-container">
+                <a class="product-link" href="/product/1171562/datorutrustning/datorkomponenter/grafikkort/gigabyte-geforce-rtx-3080-vision-oc" >
+                    <div class="text-content">
+                            <h2>Gigabyte GeForce RTX 3080 Vision OC</h2>
+
+                                <p>Grafikkort, PCI-Express 4.0, 10GB GDDR6X, Ampere</p>
+                    </div>
+                </a>
+                <a class="product-link" href="/product/1171562/datorutrustning/datorkomponenter/grafikkort/gigabyte-geforce-rtx-3080-vision-oc" >
+                    <div class="review-data">
+                            <div class="review">
+                                
+
+                                    <span class="rating-stars image-rating-5-0" title="5.0 of 5 stj&#228;rnor" aria-label="5.0 of 5 stj&#228;rnor"></span>
+                                <span class="review-count">(3)</span>
+                            </div>
+
+                            <div class="product-data">
+                                Art. nr: <span data-bind="forceSelectText:true">1171562</span>
+                                    / Prodnr: <span data-bind="forceSelectText:true">GV-N3080VISION OC-10GD</span>
+                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class='box-bottom  product-list-item--without-buy '>
+                
+
+                    <div class="price-wrapper">
+                        
+
+
+                                                <div class="product-price">
+                            <span class="product-price-now">9&#160;799:-</span>
+                        </div>
+                        
+                    </div>
+
+
+
+<div class="subscribe-product__redirect">
+</div>
+            </div>
+
+                <div class="comparison-checkbox punchout-hidden invisible ? " data-viewmodel="Components/ProductListItems/ProductSelectViewModel" data-initobject="{&quot;sku&quot;:&quot;1171562&quot;}">
+                    <div class=" checkbox-set">
+        <div class="input">
+            <input type="checkbox" class="checkbox-white" id="checkbox-1171562" name="checkbox-1171562" value="1171562" data-bind=checked:selected  />
+                <label for="checkbox-1171562" data-bind="html: '<span class=\'hidden-visible-SR\'>J&#228;mf&#246;r denna produkt</span>'">
+                    
+                </label>
+        </div>
+        <div class="validation-message" ></div>
+    </div>
+
+                </div>
+        </div>
+    </div>
+    <div class="product-list-item" data-lazy-viewmodel="Components/ProductListItems/ProductListItemViewModel">
+        <a class="product-link image-container" title="Gigabyte GeForce RTX 3080 AORUS XTREME" href="/product/1168416/datorutrustning/datorkomponenter/grafikkort/gigabyte-geforce-rtx-3080-aorus-xtreme"   tabindex="-1">
+                        <div class="image-wrapper">
+                    <img class="product-image"
+                         alt="Gigabyte GeForce RTX 3080 AORUS XTREME Grafikkort"
+                         title="Gigabyte GeForce RTX 3080 AORUS XTREME Grafikkort"
+                         src="/img/p/200/1168416.jpg" />
+            </div>
+
+                                </a>
+        <div class="content-block">
+            <div class="text-container">
+                <a class="product-link" href="/product/1168416/datorutrustning/datorkomponenter/grafikkort/gigabyte-geforce-rtx-3080-aorus-xtreme" >
+                    <div class="text-content">
+                            <h2>Gigabyte GeForce RTX 3080 AORUS XTREME</h2>
+
+                                <p>Grafikkort, PCI-Express 4.0, 10GB GDDR6X, Ampere</p>
+                    </div>
+                </a>
+                <a class="product-link" href="/product/1168416/datorutrustning/datorkomponenter/grafikkort/gigabyte-geforce-rtx-3080-aorus-xtreme" >
+                    <div class="review-data">
+
+                            <div class="product-data">
+                                Art. nr: <span data-bind="forceSelectText:true">1168416</span>
+                                    / Prodnr: <span data-bind="forceSelectText:true">GV-N3080AORUS X-10GD</span>
+                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class='box-bottom  product-list-item--without-buy '>
+                
+
+                    <div class="price-wrapper">
+                        
+
+
+                                                <div class="product-price">
+                            <span class="product-price-now">11&#160;490:-</span>
+                        </div>
+                        
+                    </div>
+
+
+
+<div class="subscribe-product__redirect">
+    <a href="/product/1168416/datorutrustning/datorkomponenter/grafikkort/gigabyte-geforce-rtx-3080-aorus-xtreme" class="btn-small secondary background-transition">
+        <span class="text">Meddela mig</span>
+    </a>
+</div>
+            </div>
+
+                <div class="comparison-checkbox punchout-hidden invisible ? " data-viewmodel="Components/ProductListItems/ProductSelectViewModel" data-initobject="{&quot;sku&quot;:&quot;1168416&quot;}">
+                    <div class=" checkbox-set">
+        <div class="input">
+            <input type="checkbox" class="checkbox-white" id="checkbox-1168416" name="checkbox-1168416" value="1168416" data-bind=checked:selected  />
+                <label for="checkbox-1168416" data-bind="html: '<span class=\'hidden-visible-SR\'>J&#228;mf&#246;r denna produkt</span>'">
+                    
+                </label>
+        </div>
+        <div class="validation-message" ></div>
+    </div>
+
+                </div>
+        </div>
+    </div>
+    <div class="product-list-item" data-lazy-viewmodel="Components/ProductListItems/ProductListItemViewModel">
+        <a class="product-link image-container" title="Gainward GeForce RTX 3080 Phantom GS" href="/product/1171801/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3080-phantom-gs"   tabindex="-1">
+                        <div class="image-wrapper">
+                    <img class="product-image"
+                         alt="Gainward GeForce RTX 3080 Phantom GS Grafikkort"
+                         title="Gainward GeForce RTX 3080 Phantom GS Grafikkort"
+                         src="/img/p/200/1171801.jpg" />
+            </div>
+
+                                </a>
+        <div class="content-block">
+            <div class="text-container">
+                <a class="product-link" href="/product/1171801/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3080-phantom-gs" >
+                    <div class="text-content">
+                            <h2>Gainward GeForce RTX 3080 Phantom GS</h2>
+
+                                <p>Grafikkort, PCI-Express 4.0, 10GB GDDR6X, Ampere</p>
+                    </div>
+                </a>
+                <a class="product-link" href="/product/1171801/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3080-phantom-gs" >
+                    <div class="review-data">
+
+                            <div class="product-data">
+                                Art. nr: <span data-bind="forceSelectText:true">1171801</span>
+                                    / Prodnr: <span data-bind="forceSelectText:true">471056224-2140</span>
+                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class='box-bottom  product-list-item--without-buy '>
+                
+
+                    <div class="price-wrapper">
+                        
+
+
+                                                <div class="product-price">
+                            <span class="product-price-now">10&#160;299:-</span>
+                        </div>
+                        
+                    </div>
+
+
+
+<div class="subscribe-product__redirect">
+    <a href="/product/1171801/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3080-phantom-gs" class="btn-small secondary background-transition">
+        <span class="text">Meddela mig</span>
+    </a>
+</div>
+            </div>
+
+                <div class="comparison-checkbox punchout-hidden invisible ? " data-viewmodel="Components/ProductListItems/ProductSelectViewModel" data-initobject="{&quot;sku&quot;:&quot;1171801&quot;}">
+                    <div class=" checkbox-set">
+        <div class="input">
+            <input type="checkbox" class="checkbox-white" id="checkbox-1171801" name="checkbox-1171801" value="1171801" data-bind=checked:selected  />
+                <label for="checkbox-1171801" data-bind="html: '<span class=\'hidden-visible-SR\'>J&#228;mf&#246;r denna produkt</span>'">
+                    
+                </label>
+        </div>
+        <div class="validation-message" ></div>
+    </div>
+
+                </div>
+        </div>
+    </div>
+    <div class="product-list-item" data-lazy-viewmodel="Components/ProductListItems/ProductListItemViewModel">
+        <a class="product-link image-container" title="Gainward GeForce RTX 3090 Phoenix" href="/product/1168126/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3090-phoenix"   tabindex="-1">
+                        <div class="image-wrapper">
+                    <img class="product-image"
+                         alt="Gainward GeForce RTX 3090 Phoenix Grafikkort"
+                         title="Gainward GeForce RTX 3090 Phoenix Grafikkort"
+                         src="/img/p/200/1168126.jpg" />
+            </div>
+
+                                </a>
+        <div class="content-block">
+            <div class="text-container">
+                <a class="product-link" href="/product/1168126/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3090-phoenix" >
+                    <div class="text-content">
+                            <h2>Gainward GeForce RTX 3090 Phoenix</h2>
+
+                                <p>Grafikkort, PCI-Express 4.0, 24GB GDDR6X, Ampere</p>
+                    </div>
+                </a>
+                <a class="product-link" href="/product/1168126/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3090-phoenix" >
+                    <div class="review-data">
+
+                            <div class="product-data">
+                                Art. nr: <span data-bind="forceSelectText:true">1168126</span>
+                                    / Prodnr: <span data-bind="forceSelectText:true">471056224-1976</span>
+                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class='box-bottom   '>
+                
+                    <div class="stockstatus">
+                        <span class="stockstatus-availability-label">Tillg&#228;nglighet:</span>
+                        
+                        <i class="icon icon-sm stockstatus-instock" title="Tillg&#228;nglighet: 19 st i lager (2-3 vardagar leveranstid)"></i>
+                        
+                        <span title="19 st i lager (2-3 vardagar leveranstid)" class="stockstatus-stock-details">19 st i lager (2-3 vardagar leveranstid)</span>
+                    </div>
+
+                    <div class="price-wrapper">
+                        
+
+
+                                                <div class="product-price">
+                            <span class="product-price-now">19&#160;090:-</span>
+                        </div>
+                        
+                    </div>
+
+
+
+                        <div class="buy-button" data-viewmodel="Components/BuyButton/BuyButtonViewModel"
+                             data-initobject="{&quot;sku&quot;:&quot;1168126&quot;,&quot;webtext1&quot;:&quot;Gainward GeForce RTX 3090 Phoenix&quot;,&quot;price&quot;:19090.00,&quot;currency&quot;:&quot;SEK&quot;,&quot;buyButtonPlacementId&quot;:&quot;buyButton-list-1168126&quot;,&quot;sellerId&quot;:&quot;KOMPLETT&quot;,&quot;sellerName&quot;:&quot;Komplett&quot;,&quot;brand&quot;:&quot;GAINWARD&quot;,&quot;navigationPath&quot;:&quot;Datorutrustning/Datorkomponenter/Grafikkort&quot;,&quot;divisionId&quot;:&quot;41&quot;,&quot;groupId&quot;:&quot;18&quot;,&quot;subGroupId&quot;:&quot;18-1&quot;,&quot;groupName&quot;:&quot;Graphics Cards&quot;,&quot;subGroupName&quot;:&quot;nVidia&quot;,&quot;divisionName&quot;:&quot;Components&quot;}">
+                                    <div class="quantity-picker"
+                                         data-viewmodel="Components/QuantityPicker/QuantityPickerViewModel"
+                                         data-initobject="{&quot;sku&quot;:&quot;1168126&quot;,&quot;changeQuantityIsEnabled&quot;:true,&quot;quantityOrdered&quot;:1,&quot;cartPosition&quot;:0,&quot;shoppingListId&quot;:0,&quot;shoppingListItemId&quot;:0,&quot;maxQuantity&quot;:1,&quot;isEol&quot;:false,&quot;updateQuantitySynchronously&quot;:true,&quot;resolvedStrings&quot;:{&quot;eolMaxExceeded&quot;:&quot;Du har valt fler Gainward GeForce RTX 3090 Phoenix(1168126) &#228;n vad som finns tillg&#228;ngligt f&#246;r f&#246;rs&#228;ljning. Antalet &#228;r justerat till 1.&quot;,&quot;maxSkuPrOrder&quot;:&quot;Du har valt fler Gainward GeForce RTX 3090 Phoenix(1168126) &#228;n vad som &#228;r tillg&#228;ngligt f&#246;r f&#246;rs&#228;ljning. Antalet &#228;r justerat till 1.&quot;},&quot;isExtendedQuantityAllowed&quot;:false}" data-bind="preventBackspace: true">
+                                        <button class="adjust-button dec disabled" data-bind="click: decreaseNumber, css: { disabled: isDecreaseButtonDisabled() }">
+                                            -
+                                        </button><label for="product-quantity-1168126">
+                                            <input type="tel" id="product-quantity-1168126" name="product-quantity-1168126" pattern="[0-9]*"
+                                                   value="1" maxlength="3"
+                                                   data-bind="value: numberOfProducts, valueUpdate: 'afterkeydown', disable: isLoading, click: clearNumberOfProducts, event: { blur: resetNumberOfProducts }" disabled="disabled" class="adjust-input">
+                                        </label><button class="adjust-button inc disabled" data-bind="click: increaseNumber, css: { disabled: isIncreaseButtonDisabled() }">+</button>
+                                    </div>
+
+                                <button type="button" data-bind="css: {'added-to-cart': addToCart.buttonClicked}, click: addToCartNotification" class="btn-small primary background-transition" aria-atomic="true" aria-live="assertive">
+                                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                    </svg>
+                                    <span class="text" data-bind="visible: !addToCart.buttonClicked()">K&#246;p</span>
+                                    <span class="text" data-bind="visible: addToCart.buttonClicked" style="display: none;" aria-label="Tillagd Gainward GeForce RTX 3090 Phoenix">Tillagd</span>
+                                </button>
+                        </div>
+
+            </div>
+
+                <div class="comparison-checkbox punchout-hidden  ? " data-viewmodel="Components/ProductListItems/ProductSelectViewModel" data-initobject="{&quot;sku&quot;:&quot;1168126&quot;}">
+                    <div class=" checkbox-set">
+        <div class="input">
+            <input type="checkbox" class="checkbox-white" id="checkbox-1168126" name="checkbox-1168126" value="1168126" data-bind=checked:selected  />
+                <label for="checkbox-1168126" data-bind="html: '<span class=\'hidden-visible-SR\'>J&#228;mf&#246;r denna produkt</span>'">
+                    
+                </label>
+        </div>
+        <div class="validation-message" ></div>
+    </div>
+
+                </div>
+        </div>
+    </div>
+    <div class="product-list-item" data-lazy-viewmodel="Components/ProductListItems/ProductListItemViewModel">
+        <a class="product-link image-container" title="Gainward GeForce RTX 3090 Phoenix GS" href="/product/1168420/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3090-phoenix-gs"   tabindex="-1">
+                        <div class="image-wrapper">
+                    <img class="product-image"
+                         alt="Gainward GeForce RTX 3090 Phoenix GS Grafikkort"
+                         title="Gainward GeForce RTX 3090 Phoenix GS Grafikkort"
+                         src="/img/p/200/1168420.jpg" />
+            </div>
+
+                                </a>
+        <div class="content-block">
+            <div class="text-container">
+                <a class="product-link" href="/product/1168420/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3090-phoenix-gs" >
+                    <div class="text-content">
+                            <h2>Gainward GeForce RTX 3090 Phoenix GS</h2>
+
+                                <p>Grafikkort, PCI-Express 4.0, 24GB GDDR6X, Ampere</p>
+                    </div>
+                </a>
+                <a class="product-link" href="/product/1168420/datorutrustning/datorkomponenter/grafikkort/gainward-geforce-rtx-3090-phoenix-gs" >
+                    <div class="review-data">
+
+                            <div class="product-data">
+                                Art. nr: <span data-bind="forceSelectText:true">1168420</span>
+                                    / Prodnr: <span data-bind="forceSelectText:true">471056224-2034</span>
+                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class='box-bottom   '>
+                
+                    <div class="stockstatus">
+                        <span class="stockstatus-availability-label">Tillg&#228;nglighet:</span>
+                        
+                        <i class="icon icon-sm stockstatus-instock" title="Tillg&#228;nglighet: 2 st i lager (2-3 vardagar leveranstid)"></i>
+                        
+                        <span title="2 st i lager (2-3 vardagar leveranstid)" class="stockstatus-stock-details">2 st i lager (2-3 vardagar leveranstid)</span>
+                    </div>
+
+                    <div class="price-wrapper">
+                        
+
+
+                                                <div class="product-price">
+                            <span class="product-price-now">18&#160;999:-</span>
+                        </div>
+                        
+                    </div>
+
+
+
+                        <div class="buy-button" data-viewmodel="Components/BuyButton/BuyButtonViewModel"
+                             data-initobject="{&quot;sku&quot;:&quot;1168420&quot;,&quot;webtext1&quot;:&quot;Gainward GeForce RTX 3090 Phoenix GS&quot;,&quot;price&quot;:18999.00,&quot;currency&quot;:&quot;SEK&quot;,&quot;buyButtonPlacementId&quot;:&quot;buyButton-list-1168420&quot;,&quot;sellerId&quot;:&quot;KOMPLETT&quot;,&quot;sellerName&quot;:&quot;Komplett&quot;,&quot;brand&quot;:&quot;GAINWARD&quot;,&quot;navigationPath&quot;:&quot;Datorutrustning/Datorkomponenter/Grafikkort&quot;,&quot;divisionId&quot;:&quot;41&quot;,&quot;groupId&quot;:&quot;18&quot;,&quot;subGroupId&quot;:&quot;18-1&quot;,&quot;groupName&quot;:&quot;Graphics Cards&quot;,&quot;subGroupName&quot;:&quot;nVidia&quot;,&quot;divisionName&quot;:&quot;Components&quot;}">
+                                    <div class="quantity-picker"
+                                         data-viewmodel="Components/QuantityPicker/QuantityPickerViewModel"
+                                         data-initobject="{&quot;sku&quot;:&quot;1168420&quot;,&quot;changeQuantityIsEnabled&quot;:true,&quot;quantityOrdered&quot;:1,&quot;cartPosition&quot;:0,&quot;shoppingListId&quot;:0,&quot;shoppingListItemId&quot;:0,&quot;maxQuantity&quot;:1,&quot;isEol&quot;:false,&quot;updateQuantitySynchronously&quot;:true,&quot;resolvedStrings&quot;:{&quot;eolMaxExceeded&quot;:&quot;Du har valt fler Gainward GeForce RTX 3090 Phoenix GS(1168420) &#228;n vad som finns tillg&#228;ngligt f&#246;r f&#246;rs&#228;ljning. Antalet &#228;r justerat till 1.&quot;,&quot;maxSkuPrOrder&quot;:&quot;Du har valt fler Gainward GeForce RTX 3090 Phoenix GS(1168420) &#228;n vad som &#228;r tillg&#228;ngligt f&#246;r f&#246;rs&#228;ljning. Antalet &#228;r justerat till 1.&quot;},&quot;isExtendedQuantityAllowed&quot;:false}" data-bind="preventBackspace: true">
+                                        <button class="adjust-button dec disabled" data-bind="click: decreaseNumber, css: { disabled: isDecreaseButtonDisabled() }">
+                                            -
+                                        </button><label for="product-quantity-1168420">
+                                            <input type="tel" id="product-quantity-1168420" name="product-quantity-1168420" pattern="[0-9]*"
+                                                   value="1" maxlength="3"
+                                                   data-bind="value: numberOfProducts, valueUpdate: 'afterkeydown', disable: isLoading, click: clearNumberOfProducts, event: { blur: resetNumberOfProducts }" disabled="disabled" class="adjust-input">
+                                        </label><button class="adjust-button inc disabled" data-bind="click: increaseNumber, css: { disabled: isIncreaseButtonDisabled() }">+</button>
+                                    </div>
+
+                                <button type="button" data-bind="css: {'added-to-cart': addToCart.buttonClicked}, click: addToCartNotification" class="btn-small primary background-transition" aria-atomic="true" aria-live="assertive">
+                                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                    </svg>
+                                    <span class="text" data-bind="visible: !addToCart.buttonClicked()">K&#246;p</span>
+                                    <span class="text" data-bind="visible: addToCart.buttonClicked" style="display: none;" aria-label="Tillagd Gainward GeForce RTX 3090 Phoenix GS">Tillagd</span>
+                                </button>
+                        </div>
+
+            </div>
+
+                <div class="comparison-checkbox punchout-hidden  ? " data-viewmodel="Components/ProductListItems/ProductSelectViewModel" data-initobject="{&quot;sku&quot;:&quot;1168420&quot;}">
+                    <div class=" checkbox-set">
+        <div class="input">
+            <input type="checkbox" class="checkbox-white" id="checkbox-1168420" name="checkbox-1168420" value="1168420" data-bind=checked:selected  />
+                <label for="checkbox-1168420" data-bind="html: '<span class=\'hidden-visible-SR\'>J&#228;mf&#246;r denna produkt</span>'">
+                    
+                </label>
+        </div>
+        <div class="validation-message" ></div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
